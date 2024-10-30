@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/custom_toolber"
+        android:layout_marginStart="0dp"
+        android:paddingStart="0dp"
+        app:titleTextColor="#6CA6D5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginStart="0dp"
+            android:paddingStart="0dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/favoriteslayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/image_selector"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/iconFavorites"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:src="@drawable/star" />
+
+                <TextView
+                    android:id="@+id/FavoritesText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="Favorites"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/editlayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:background="@drawable/image_selector"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/iconEdit"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:src="@drawable/edit_icon"
+                    />
+                <TextView
+                    android:id="@+id/editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="Edit"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shareLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:background="@drawable/image_selector"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/iconShare"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:src="@drawable/share_icon"
+                    />
+                <TextView
+                    android:id="@+id/shareText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="Share"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/morelayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:background="@drawable/image_selector"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/iconMore"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:src="@drawable/mode"
+                    />
+                <TextView
+                    android:id="@+id/moreText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:text="More"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+</LinearLayout>
